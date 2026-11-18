@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revista Digital | El Desempleo Juvenil: Efectos Perpetuos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      scroll-behavior: smooth;
+    }
+    .editorial-font {
+      font-family: 'Merriweather', serif;
+    }
+    .tab-active {
+      border-bottom: 3px solid #2563eb;
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+    .essay-tab-active {
+      background-color: #1e3a8a;
+      color: #ffffff;
+    }
+    .fade-in {
+      animation: fadeIn 0.35s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Barra de navegación superior -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="bg-blue-700 text-white font-extrabold px-3 py-1 rounded text-sm tracking-wider uppercase">Edición Especial</span>
+        <span class="font-extrabold text-lg tracking-tight text-slate-900">OBSERVATORIO LABORAL JUVENIL</span>
+      </div>
+      <nav class="flex flex-wrap gap-4 md:gap-5 text-xs md:text-sm font-semibold text-slate-600">
+        <a href="#tesis" class="hover:text-blue-700 transition">Tesis y Argumentos</a>
+        <a href="#datos" class="hover:text-blue-700 transition">Infografía y Simulador</a>
+        <a href="#contraargumento" class="hover:text-blue-700 transition">Contraargumento</a>
+        <a href="#ensayo-completo" class="hover:text-blue-700 transition">Texto Argumentativo</a>
+        <a href="#carrusel" class="hover:text-blue-700 transition">Propuestas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portada de Revista Digital -->
+  <section class="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 text-blue-200 text-xs font-semibold px-3 py-1 rounded-full mb-6">
+        <span>•</span>
+        <span>JUAN NAVARRO</span>
+        <span>•</span>
+        <span>ANDRES VANEGAS</span>
+        <span>•</span>
+        <span>JHON MORENO</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        ¿El título universitario basta? <span class="text-amber-400">La trampa del desempleo juvenil</span> y sus efectos perpetuos
+      </h1>
+      <p class="editorial-font text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-8">
+        Un análisis crítico basado en evidencia econométrica sobre por qué la educación superior en Colombia garantiza formalidad, pero no evita las «cicatrices» salariales ni la brecha de competencias en el primer empleo.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#ensayo-completo" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-6 py-3 rounded-lg shadow-lg transition">
+          Leer Texto Argumentativo Completo ↓
+        </a>
+        <a href="#datos" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-3 rounded-lg transition">
+          Probar Simulador Salarial
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 1: Tesis y Pilares Argumentativos -->
+  <section id="tesis" class="max-w-5xl mx-auto px-4 py-14">
+    <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-8 md:p-10">
+      <span class="text-xs font-extrabold uppercase tracking-widest text-blue-700">Postura Central del Ensayo</span>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1 mb-4">Nuestra Tesis</h2>
+      <blockquote class="editorial-font text-lg md:text-xl italic text-slate-800 bg-blue-50/70 border-l-4 border-blue-700 p-6 rounded-r-xl mb-8">
+        «El desempleo juvenil en Colombia y en las economías en desarrollo no obedece únicamente a una carencia de formación académica individual, sino a una falla doblemente estructural del modelo económico y educativo que desaprovecha el talento profesional, arroja a los jóvenes menos favorecidos a la informalidad y deja cicatrices salariales y laborales de por vida.»
+      </blockquote>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="text-blue-700 font-extrabold text-sm mb-2">• BRECHA ESTRUCTURAL</div>
+          <h3 class="font-bold text-lg mb-2">Desajuste escuela-empresa</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Ramírez-Guerrero (2002) explica que el problema es doblemente estructural: destrucción de empleos tradicionales y rezago educativo frente a los cambios tecnológicos.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="text-blue-700 font-extrabold text-sm mb-2">• PARADOJA EDUCATIVA</div>
+          <h3 class="font-bold text-lg mb-2">Formalidad vs. Ocupación</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Castillo y García (2019) demuestran con datos del DANE que Colombia tiene la tasa más alta de desempleo en jóvenes con educación superior de América Latina.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="text-blue-700 font-extrabold text-sm mb-2">• EFECTOS PERPETUOS</div>
+          <h3 class="font-bold text-lg mb-2">La cicatriz del desempleo</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Según De La Hoz et al. (2012), cada <strong>3 meses de desempleo</strong> antes de los 23 años genera 2 meses extra de desempleo entre los 28 y 33 años.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 2: Infografía Interactiva y Simulador -->
+  <section id="datos" class="bg-slate-900 text-white py-14 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-8">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400">Evidencia Empírica de los Artículos</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold mt-1">Infografía Interactiva: Radiografía del Desempleo Juvenil</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        <!-- Simulador de Cicatriz Salarial -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-amber-400 mb-2">Simulador: La «Cicatriz Salarial»</h3>
+            <p class="text-sm text-slate-300 mb-5">
+              Basado en los hallazgos de Mroz y Savage (2006) y Gregg y Tominey (2004): desliza la barra para elegir cuántos meses permanece desempleado un joven antes de los 23 años y observa el impacto en su vida adulta.
+            </p>
+
+            <label for="mesesSlider" class="block text-sm font-semibold mb-2">
+              Meses de desempleo juvenil (antes de los 23 años): <span id="mesesLabel" class="text-amber-400 font-extrabold text-lg">6 meses</span>
+            </label>
+            <input id="mesesSlider" type="range" min="3" max="24" step="3" value="6" class="w-full accent-amber-400 cursor-pointer mb-6" />
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+            <div>
+              <span class="text-xs text-slate-400 block">Penalización salarial a los 42 años</span>
+              <span id="salarioImpacto" class="text-2xl font-extrabold text-rose-400">-12.4%</span>
+              <span class="text-xs text-slate-400 block mt-1">Rango empírico: 12% a 15%</span>
+            </div>
+            <div>
+              <span class="text-xs text-slate-400 block">Desempleo extra en adultez (28-33 años)</span>
+              <span id="desempleoExtra" class="text-2xl font-extrabold text-amber-400">+4.0 meses</span>
+              <span class="text-xs text-slate-400 block mt-1">Proporción 3:2 (Gregg, 2001)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparador de Datos Colombia (GEIH - DANE) -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-blue-400 mb-2">Colombia: Nivel Educativo e Informalidad</h3>
+          <p class="text-sm text-slate-300 mb-5">
+            Datos descriptivos de la GEIH (DANE) analizados por Castillo Robayo y García Estévez (2019). Selecciona cada nivel educativo para comparar sus tasas:
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-5">
+            <button type="button" onclick="mostrarNivel('sinTitulo')" id="btn-sinTitulo" class="nivel-btn bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">Sin Título</button>
+            <button type="button" onclick="mostrarNivel('bachiller')" id="btn-bachiller" class="nivel-btn bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">Bachiller</button>
+            <button type="button" onclick="mostrarNivel('tecnico')" id="btn-tecnico" class="nivel-btn bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">Técnico/Tecnólogo</button>
+            <button type="button" onclick="mostrarNivel('universitario')" id="btn-universitario" class="nivel-btn bg-blue-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">Universitario</button>
+          </div>
+
+          <div id="nivelInfo" class="space-y-4 fade-in"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 3: Laboratorio de Contraargumentación -->
+  <section id="contraargumento" class="max-w-5xl mx-auto px-4 pt-14 pb-8">
+    <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-8 md:p-10">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1 mb-2">Anatomía de Nuestro Contraargumento</h2>
+      <p class="text-slate-600 mb-6">
+        Haz clic en cada pestaña para revisar cómo enfrentamos la postura contraria con rigor académico:
+      </p>
+
+      <div class="flex border-b border-slate-200 mb-6 overflow-x-auto">
+        <button type="button" onclick="cambiarPaso(1)" id="tab-1" class="tab-btn tab-active px-5 py-3 text-sm whitespace-nowrap transition cursor-pointer">
+          Presento la Objeción
+        </button>
+        <button type="button" onclick="cambiarPaso(2)" id="tab-2" class="tab-btn px-5 py-3 text-sm text-slate-500 whitespace-nowrap transition cursor-pointer">
+          Refuto con Evidencia
+        </button>
+        <button type="button" onclick="cambiarPaso(3)" id="tab-3" class="tab-btn px-5 py-3 text-sm text-slate-500 whitespace-nowrap transition cursor-pointer">
+          Retomo mi Postura
+        </button>
+      </div>
+
+      <div id="contenidoPaso" class="min-h-[160px] fade-in"></div>
+    </div>
+  </section>
+
+  <!-- Sección 4: Texto Argumentativo Completo (APA 7) -->
+  <section id="ensayo-completo" class="max-w-5xl mx-auto px-4 py-10">
+    <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+      
+      <!-- Encabezado de Artículo Editorial -->
+      <div class="bg-slate-900 text-white p-8 md:p-10 border-b border-slate-800">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <span class="bg-amber-400 text-slate-950 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded">
+            Artículo Central • Texto Argumentativo
+          </span>
+          <div class="flex items-center gap-2">
+            <button type="button" onclick="cambiarTamanoTexto(-1)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-bold px-3 py-1.5 rounded transition cursor-pointer" title="Reducir letra">
+              A-
+            </button>
+            <button type="button" onclick="cambiarTamanoTexto(1)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-bold px-3 py-1.5 rounded transition cursor-pointer" title="Aumentar letra">
+              A+
+            </button>
+            <button type="button" onclick="copiarEnsayo()" id="btnCopiar" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-3.5 py-1.5 rounded transition cursor-pointer">
+              Copiar texto APA
+            </button>
+          </div>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-extrabold leading-snug mb-3">
+          El Desempleo Juvenil como Problema Estructural: Cicatrices Permanentes, Paradoja Educativa y Retos de Inclusión Laboral
+        </h2>
+        <p class="text-sm text-slate-300">
+          <strong>Autor:</strong> Jhon Moreno • Juan Navarro • Andres Vanegas • Programa de Ingeniería en Sistemas, Corporación Universitaria Minuto de Dios (UNIMINUTO)
+        </p>
+      </div>
+
+      <!-- Barra de filtro interactivo del ensayo -->
+      <div class="bg-slate-100 px-6 py-3 border-b border-slate-200 flex flex-wrap gap-2">
+        <button type="button" onclick="filtrarSeccionEnsayo('todas')" id="filtro-todas" class="essay-filter essay-tab-active px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          Ver Ensayo Completo
+        </button>
+        <button type="button" onclick="filtrarSeccionEnsayo('intro')" id="filtro-intro" class="essay-filter bg-white text-slate-700 hover:bg-slate-200 px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          Introducción
+        </button>
+        <button type="button" onclick="filtrarSeccionEnsayo('desarrollo')" id="filtro-desarrollo" class="essay-filter bg-white text-slate-700 hover:bg-slate-200 px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          Desarrollo
+        </button>
+        <button type="button" onclick="filtrarSeccionEnsayo('contra')" id="filtro-contra" class="essay-filter bg-white text-slate-700 hover:bg-slate-200 px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          Contraargumentación
+        </button>
+        <button type="button" onclick="filtrarSeccionEnsayo('conclusiones')" id="filtro-conclusiones" class="essay-filter bg-white text-slate-700 hover:bg-slate-200 px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          Conclusiones
+        </button>
+        <button type="button" onclick="filtrarSeccionEnsayo('referencias')" id="filtro-referencias" class="essay-filter bg-white text-slate-700 hover:bg-slate-200 px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          Referencias APA 7
+        </button>
+      </div>
+
+      <!-- Cuerpo del Texto Argumentativo -->
+      <article id="cuerpoEnsayo" class="editorial-font p-8 md:p-12 text-slate-800 space-y-8 leading-loose text-base">
+        
+        <!-- Introducción -->
+        <div data-seccion="intro" class="seccion-ensayo space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="h-6 w-1.5 bg-blue-700 rounded-full"></span>
+            <h3 class="font-sans text-xl font-extrabold text-slate-900">Introducción</h3>
+          </div>
+          <p class="indent-8 text-justify">
+            El desempleo juvenil constituye una de las problemáticas socioeconómicas más complejas y persistentes en el mundo contemporáneo, con manifestaciones particularmente críticas en América Latina y Colombia. Lejos de representar una simple etapa transitoria mientras los jóvenes culminan su formación e ingresan al mercado de trabajo, la desocupación temprana afecta tanto a quienes no tuvieron acceso a la educación superior como a los profesionales recién graduados. En este contexto surge una pregunta central para el análisis académico y de política pública: <strong>¿por qué el desempleo juvenil es un problema estructural que genera impactos permanentes en la trayectoria de vida y cómo lograr que las empresas contraten a los jóvenes graduados al tiempo que brindan oportunidades de capacitación a quienes no pudieron estudiar?</strong>
+          </p>
+          <p class="indent-8 text-justify">
+            A partir del análisis crítico de la literatura especializada sobre mercado laboral, brecha de competencias y capital humano, este texto argumentativo sostiene la siguiente tesis: <strong>el desempleo juvenil en Colombia y en las economías en desarrollo no obedece únicamente a una carencia de formación académica individual, sino a una falla doblemente estructural del modelo económico y educativo que desaprovecha el talento profesional, arroja a los jóvenes menos favorecidos a la informalidad y deja cicatrices salariales y laborales de por vida.</strong> Para demostrar esta postura, se desarrollan tres ejes argumentativos —la falla estructural por brecha de competencias, la paradoja educativa colombiana y las cicatrices permanentes en la trayectoria laboral—, seguidos de un apartado de contraargumentación frente a la teoría clásica del capital humano y una propuesta integral de transición formativa.
+          </p>
+        </div>
+
+        <!-- Desarrollo -->
+        <div data-seccion="desarrollo" class="seccion-ensayo space-y-5 pt-4 border-t border-slate-200">
+          <div class="flex items-center gap-3">
+            <span class="h-6 w-1.5 bg-indigo-700 rounded-full"></span>
+            <h3 class="font-sans text-xl font-extrabold text-slate-900">Desarrollo</h3>
+          </div>
+          
+          <div class="bg-slate-50 border-l-4 border-indigo-600 p-5 rounded-r-xl">
+            <span class="font-sans text-xs font-extrabold uppercase tracking-wider text-indigo-700 block mb-1">Eje Argumentativo 1 • Falla Doblemente Estructural</span>
+            <p class="indent-8 text-justify">
+              En primer lugar, el desempleo juvenil no es un fenómeno meramente coyuntural asociado a las fluctuaciones pasajeras de la economía, sino una falla doblemente estructural agravada por la brecha de competencias laborales. Según datos de la Organización Internacional del Trabajo (OIT) analizados por Ramírez-Guerrero (2002), las tasas de desempleo juvenil duplican o triplican las de los adultos en prácticamente todas las regiones del mundo, superando el 30 % en diversos países en desarrollo, mientras que los jóvenes provenientes de hogares más pobres sufren los mayores déficits educativos. Esta situación se explica porque la evolución de los sistemas educativos tradicionales se ha rezagado frente a los acelerados cambios tecnológicos y a las exigencias de la globalización. Al destruirse empleos tradicionales y demandarse perfiles flexibles con altas habilidades técnicas y comunicacionales, los jóvenes sin acceso a educación pertinente quedan atrapados en un filtro de exclusión que los empuja hacia el desempleo prolongado o la informalidad de subsistencia (Ramírez-Guerrero, 2002).
+            </p>
+          </div>
+
+          <div class="bg-slate-50 border-l-4 border-blue-600 p-5 rounded-r-xl">
+            <span class="font-sans text-xs font-extrabold uppercase tracking-wider text-blue-700 block mb-1">Eje Argumentativo 2 • La Paradoja Educativa en Colombia</span>
+            <p class="indent-8 text-justify">
+              En segundo lugar, al observar el caso específico de Colombia, se evidencia que el problema tampoco se resuelve únicamente con la obtención de un título universitario, pues existe una falla estructural en el modelo económico que desaprovecha el capital humano calificado. En su investigación econométrica basada en datos del Departamento Administrativo Nacional de Estadística (DANE), Castillo Robayo y García Estévez (2019) demuestran que Colombia registra la tasa de desempleo de jóvenes con educación superior más alta de América Latina, mientras que la tasa de desocupación de los jóvenes con baja escolaridad es una de las más bajas de la región. Este hallazgo revela una profunda paradoja: la economía colombiana absorbe con relativa facilidad la mano de obra no calificada en empleos precarios, informales y de baja remuneración, pero castiga y no logra integrar al talento profesional recién graduado, debido a la falta de experiencia previa, la escasez de vacantes formales acordes a su perfil y la ausencia de redes de contacto institucionales (Castillo Robayo y García Estévez, 2019).
+            </p>
+          </div>
+
+          <div class="bg-slate-50 border-l-4 border-rose-600 p-5 rounded-r-xl">
+            <span class="font-sans text-xs font-extrabold uppercase tracking-wider text-rose-700 block mb-1">Eje Argumentativo 3 • Cicatrices Permanentes en la Trayectoria</span>
+            <p class="indent-8 text-justify">
+              En tercer lugar, el desempleo en la juventud no es un evento aislado sin consecuencias futuras, sino un fenómeno que produce cicatrices permanentes en la trayectoria laboral y social del individuo. De La Hoz et al. (2012) documentan que la desocupación temprana merma de forma duradera los ingresos futuros y eleva el riesgo de desempleo en la adultez. En términos empíricos, quedarse desempleado alrededor de los 22 años reduce el salario en un 8 % al año siguiente y mantiene una pérdida de entre el 3,2 % y el 5 % en años posteriores (Mroz y Savage, 2006, como se citó en De La Hoz et al., 2012), provocando incluso una penalización salarial de entre el 12 % y el 15 % hasta veinte años después, cerca de los 42 años de edad (Gregg y Tominey, 2004, como se citó en De La Hoz et al., 2012). Asimismo, cada tres meses de desempleo sufridos antes de los 23 años generan dos meses adicionales de desocupación entre los 28 y los 33 años (Gregg, 2001, como se citó en De La Hoz et al., 2012). Este castigo ocurre porque la inactividad inicial interrumpe la adquisición de experiencia práctica, degrada el capital humano, impide construir redes profesionales y reduce la capacidad de ahorro, exponiendo a la persona a una inestabilidad laboral recurrente y a la exclusión social (De La Hoz et al., 2012).
+            </p>
+          </div>
+        </div>
+
+        <!-- Contraargumentación -->
+        <div data-seccion="contra" class="seccion-ensayo space-y-4 pt-4 border-t border-slate-200">
+          <div class="flex items-center gap-3">
+            <span class="h-6 w-1.5 bg-amber-500 rounded-full"></span>
+            <h3 class="font-sans text-xl font-extrabold text-slate-900">Contraargumentación</h3>
+          </div>
+          <div class="bg-amber-50/80 border border-amber-200 p-6 rounded-xl">
+            <p class="indent-8 text-justify">
+              Frente a este diagnóstico, quienes defienden la teoría clásica del capital humano argumentan que la solución directa al desempleo juvenil radica exclusivamente en incrementar la cobertura educativa, sosteniendo que a mayor nivel de escolaridad y cualificación técnica, mayor será la productividad del joven y más rápida su inserción laboral (Becker, 1993, como se citó en De La Hoz et al., 2012). Es cierto que la educación superior aporta conocimientos fundamentales y aumenta de manera significativa la probabilidad de acceder a un empleo formal frente a quienes solo alcanzan la educación básica (Castillo Robayo y García Estévez, 2019). Sin embargo, la evidencia empírica demuestra que esta postura resulta insuficiente para explicar la realidad del mercado laboral juvenil: en Colombia, contar con un diploma universitario no incrementa por sí solo la probabilidad de estar ocupado, precisamente porque las empresas exigen experiencia previa que los egresados no poseen y existe un desajuste estructural entre la oferta académica y la demanda productiva (Castillo Robayo y García Estévez, 2019). Además, como advierten De La Hoz et al. (2012), prolongar la espera por un primer empleo formal acarrea cicatrices salariales de hasta el 15 % a largo plazo. Por estas razones, sin desconocer el valor de la formación académica, sigue siendo imprescindible articular la educación con políticas activas de primer empleo y capacitación dual.
+            </p>
+          </div>
+        </div>
+
+        <!-- Conclusiones -->
+        <div data-seccion="conclusiones" class="seccion-ensayo space-y-4 pt-4 border-t border-slate-200">
+          <div class="flex items-center gap-3">
+            <span class="h-6 w-1.5 bg-emerald-600 rounded-full"></span>
+            <h3 class="font-sans text-xl font-extrabold text-slate-900">Conclusiones</h3>
+          </div>
+          <p class="indent-8 text-justify">
+            El análisis realizado permite concluir que el desempleo juvenil es un problema estructural de carácter multidimensional que compromete tanto el bienestar individual como el desarrollo económico del país. Por un lado, se confirma que la falta de oportunidades laborales en edades tempranas deja huellas irreversibles en los salarios, la estabilidad ocupacional y la movilidad social de los jóvenes, perpetuando círculos de pobreza y exclusión (De La Hoz et al., 2012). Por otro lado, se evidencia que en Colombia el sistema productivo presenta una doble falla: condena a los jóvenes sin estudios a la informalidad precaria y excluye del empleo formal a los profesionales recién graduados por falta de experiencia y redes de intermediación (Castillo Robayo y García Estévez, 2019).
+          </p>
+          <p class="indent-8 text-justify">
+            Finalmente, para responder al interrogante sobre cómo lograr que las empresas contraten a los jóvenes graduados y al mismo tiempo capaciten a quienes no pudieron estudiar, resulta indispensable implementar un modelo de transición formativa en dos fases propuesto por Ramírez-Guerrero (2002). Esto implica articular al Estado, el sector empresarial y las organizaciones de la sociedad civil mediante programas intensivos que combinen nivelación de competencias básicas, subsidios de sostenimiento y prácticas laborales remuneradas en empresas reales para quienes no accedieron a la universidad, junto con incentivos tributarios al primer empleo y canales formales de intermediación laboral para los recién egresados. Solo mediante esta alianza institucional será posible cerrar la brecha entre educación y trabajo y evitar que una generación entera cargue con las cicatrices perpetuas del desempleo.
+          </p>
+        </div>
+
+        <!-- Referencias -->
+        <div data-seccion="referencias" class="seccion-ensayo space-y-4 pt-4 border-t border-slate-200">
+          <div class="flex items-center gap-3">
+            <span class="h-6 w-1.5 bg-slate-700 rounded-full"></span>
+            <h3 class="font-sans text-xl font-extrabold text-slate-900">Referencias Bibliográficas (Normas APA 7.ª Ed.)</h3>
+          </div>
+          <div class="space-y-3 text-sm md:text-base text-slate-700">
+            <p class="pl-8 -indent-8">
+              Castillo Robayo, C. D., y García Estévez, J. (2019). Desempleo juvenil en Colombia: ¿la educación importa? <em>Revista Finanzas y Política Económica</em>, 11(1), 101-127. http://doi.org/10.14718/revfinanzpolitecon.2019.11.1.7
+            </p>
+            <p class="pl-8 -indent-8">
+              De La Hoz, F. J., Quejada, R., y Yánez, M. (2012). El desempleo juvenil: problema de efectos perpetuos. <em>Revista Latinoamericana de Ciencias Sociales, Niñez y Juventud</em>, 10(1), 427-439.
+            </p>
+            <p class="pl-8 -indent-8">
+              Ramírez-Guerrero, J. (2002). <em>El desempleo juvenil, un problema estructural y global: el papel de las Organizaciones de la Sociedad Civil</em>. International Youth Foundation.
+            </p>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección 5: Carrusel de Soluciones ("Transición Formativa") -->
+  <section id="carrusel" class="max-w-5xl mx-auto px-4 pt-6 pb-16">
+    <div class="bg-gradient-to-r from-blue-800 to-indigo-900 rounded-2xl p-8 md:p-10 text-white shadow-xl">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-200">Hacia la Solución Estructural</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold mt-1">¿Cómo romper el círculo vicioso?</h2>
+        </div>
+        <div class="flex gap-2">
+          <button type="button" onclick="moverCarrusel(-1)" class="bg-white/15 hover:bg-white/25 px-4 py-2 rounded-lg font-bold transition cursor-pointer">← Anterior</button>
+          <button type="button" onclick="moverCarrusel(1)" class="bg-amber-400 hover:bg-amber-300 text-slate-950 px-4 py-2 rounded-lg font-bold transition cursor-pointer">Siguiente →</button>
+        </div>
+      </div>
+
+      <div id="slideCarrusel" class="bg-white/10 backdrop-blur border border-white/15 rounded-xl p-6 md:p-8 fade-in"></div>
+      <div class="flex justify-center gap-2 mt-5" id="indicadoresCarrusel"></div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-slate-950 text-slate-400 py-8 px-4 border-t border-slate-800 text-center text-xs">
+    <p>Producto Comunicativo Digital • Sustentación — UNIMINUTO (2026)</p>
+  </footer>
+
+  <script>
+    // 1. Simulador de Cicatriz Salarial
+    function actualizarSimulador() {
+      const slider = document.getElementById('mesesSlider');
+      const mesesLabel = document.getElementById('mesesLabel');
+      const salarioImpacto = document.getElementById('salarioImpacto');
+      const desempleoExtra = document.getElementById('desempleoExtra');
+
+      if (!slider) return;
+      const meses = parseInt(slider.value, 10);
+      mesesLabel.textContent = meses + ' meses';
+      const extraAdulto = ((meses / 3) * 2).toFixed(1);
+      const cicatriz = Math.min(15, (11.5 + (meses / 24) * 3.5)).toFixed(1);
+      desempleoExtra.textContent = '+' + extraAdulto + ' meses';
+      salarioImpacto.textContent = '-' + cicatriz + '%';
+    }
+
+    // 2. Comparador de niveles educativos (Tabla 1, Castillo & García, 2019)
+    const datosNiveles = {
+      sinTitulo: {
+        titulo: "Jóvenes y trabajadores Sin Título",
+        formal: 14.25,
+        informal: 48.67,
+        desocupado: 4.76,
+        analisis: "Tienen baja tasa de desempleo abierto porque su bajo salario de reserva los obliga a aceptar empleos informales de subsistencia (48,67 %) sin seguridad social."
+      },
+      bachiller: {
+        titulo: "Nivel Bachiller",
+        formal: 28.69,
+        informal: 35.17,
+        desocupado: 7.70,
+        analisis: "Representan la mayor proporción de vacantes demandadas por empresas en el Servicio Público de Empleo (33,7 % en 2016), pero persiste una alta informalidad."
+      },
+      tecnico: {
+        titulo: "Nivel Técnico / Tecnólogo",
+        formal: 49.81,
+        informal: 27.29,
+        desocupado: 9.70,
+        analisis: "La formalidad casi se duplica frente a los bachilleres, pero enfrentan una tasa de desocupación del 9,70 % por desajustes entre competencias técnicas y demanda."
+      },
+      universitario: {
+        titulo: "Nivel Universitario",
+        formal: 75.20,
+        informal: 6.71,
+        desocupado: 9.60,
+        analisis: "Alcanzan un 75,2 % de formalidad cuando logran emplearse, pero sufren alta desocupación inicial por falta de experiencia previa y altos salarios de reserva."
+      }
+    };
+
+    function mostrarNivel(clave) {
+      document.querySelectorAll('.nivel-btn').forEach(function(btn) {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('bg-slate-700', 'text-slate-200');
+      });
+      const activeBtn = document.getElementById('btn-' + clave);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-slate-700', 'text-slate-200');
+        activeBtn.classList.add('bg-blue-600', 'text-white');
+      }
+
+      const d = datosNiveles[clave];
+      const contenedor = document.getElementById('nivelInfo');
+      if (contenedor && d) {
+        contenedor.innerHTML = `
+          <h4 class="font-bold text-lg text-white">${d.titulo}</h4>
+          <div class="space-y-2 text-xs">
+            <div>
+              <div class="flex justify-between mb-1"><span>Empleo Formal</span><span class="font-bold text-emerald-400">${d.formal}%</span></div>
+              <div class="w-full bg-slate-700 h-2.5 rounded-full"><div class="bg-emerald-400 h-2.5 rounded-full" style="width:${d.formal}%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>Empleo Informal</span><span class="font-bold text-amber-400">${d.informal}%</span></div>
+              <div class="w-full bg-slate-700 h-2.5 rounded-full"><div class="bg-amber-400 h-2.5 rounded-full" style="width:${d.informal}%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>Desocupados</span><span class="font-bold text-rose-400">${d.desocupado}%</span></div>
+              <div class="w-full bg-slate-700 h-2.5 rounded-full"><div class="bg-rose-400 h-2.5 rounded-full" style="width:${d.desocupado * 3}%"></div></div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 bg-slate-900/70 p-3 rounded-lg border border-slate-700 leading-relaxed">${d.analisis}</p>
+        `;
+      }
+    }
+
+    // 3. Pestañas del Contraargumento
+    const pasosContra = {
+      1: `
+        <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl">
+          <span class="text-xs font-bold uppercase text-amber-800">1. Reconocimiento Imparcial de la Postura Contraria</span>
+          <p class="editorial-font text-slate-800 mt-2 leading-relaxed">
+            «Quienes defienden la teoría clásica del capital humano argumentan que la solución directa al desempleo juvenil radica exclusivamente en incrementar la cobertura educativa, sosteniendo que a mayor nivel de escolaridad y cualificación técnica, mayor será la productividad del joven y más rápida su inserción laboral (Becker, 1993). Es cierto que la educación superior aporta conocimientos fundamentales y aumenta de manera significativa la probabilidad de acceder a un empleo formal frente a quienes solo alcanzan la educación básica.»
+          </p>
+        </div>`,
+      2: `
+        <div class="p-6 bg-rose-50 border border-rose-200 rounded-xl">
+          <span class="text-xs font-bold uppercase text-rose-800">2. Refutación con Datos y Estudios Académicos</span>
+          <p class="editorial-font text-slate-800 mt-2 leading-relaxed">
+            «Sin embargo, la evidencia empírica demuestra que esta postura resulta insuficiente para explicar la realidad del mercado laboral juvenil: en Colombia, contar con un diploma universitario no incrementa por sí solo la probabilidad de estar ocupado, precisamente porque las empresas exigen experiencia previa que los egresados no poseen y existe un desajuste estructural entre la oferta académica y la demanda productiva (Castillo Robayo y García Estévez, 2019). Además, prolongar la espera por un primer empleo formal acarrea cicatrices salariales de hasta el 15 % a largo plazo (De La Hoz et al., 2012).»
+          </p>
+        </div>`,
+      3: `
+        <div class="p-6 bg-emerald-50 border border-emerald-200 rounded-xl">
+          <span class="text-xs font-bold uppercase text-emerald-800">3. Reafirmación de la Tesis Principal</span>
+          <p class="editorial-font text-slate-800 mt-2 leading-relaxed">
+            «Por estas razones, sin desconocer el valor de la formación académica, sigue siendo imprescindible articular la educación con políticas activas de primer empleo y capacitación dual.»
+          </p>
+        </div>`
+    };
+
+    function cambiarPaso(num) {
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
+        b.classList.remove('tab-active');
+        b.classList.add('text-slate-500');
+      });
+      const activeTab = document.getElementById('tab-' + num);
+      if (activeTab) {
+        activeTab.classList.add('tab-active');
+        activeTab.classList.remove('text-slate-500');
+      }
+      const contenedor = document.getElementById('contenidoPaso');
+      if (contenedor) {
+        contenedor.innerHTML = pasosContra[num];
+      }
+    }
+
+    // 4. Controles del Texto Argumentativo Completo
+    let tamanoActual = 16;
+    function cambiarTamanoTexto(delta) {
+      tamanoActual = Math.min(22, Math.max(13, tamanoActual + delta));
+      const cuerpo = document.getElementById('cuerpoEnsayo');
+      if (cuerpo) {
+        cuerpo.style.fontSize = tamanoActual + 'px';
+      }
+    }
+
+    function filtrarSeccionEnsayo(seccion) {
+      document.querySelectorAll('.essay-filter').forEach(function(btn) {
+        btn.classList.remove('essay-tab-active');
+        btn.classList.add('bg-white', 'text-slate-700');
+      });
+      const activeBtn = document.getElementById('filtro-' + seccion);
+      if (activeBtn) {
+        activeBtn.classList.add('essay-tab-active');
+        activeBtn.classList.remove('bg-white', 'text-slate-700');
+      }
+
+      document.querySelectorAll('.seccion-ensayo').forEach(function(div) {
+        if (seccion === 'todas' || div.dataset.seccion === seccion) {
+          div.style.display = 'block';
+          div.classList.add('fade-in');
+        } else {
+          div.style.display = 'none';
+        }
+      });
+    }
+
+    function copiarEnsayo() {
+      const cuerpo = document.getElementById('cuerpoEnsayo');
+      const btn = document.getElementById('btnCopiar');
+      if (!cuerpo || !btn) return;
+
+      navigator.clipboard.writeText(cuerpo.innerText).then(function() {
+        btn.textContent = "¡Texto Copiado!";
+        btn.classList.remove('bg-blue-600', 'hover:bg-blue-500');
+        btn.classList.add('bg-emerald-600');
+        setTimeout(function() {
+          btn.textContent = "Copiar texto APA";
+          btn.classList.remove('bg-emerald-600');
+          btn.classList.add('bg-blue-600', 'hover:bg-blue-500');
+        }, 2000);
+      });
+    }
+
+    // 5. Carrusel de Propuestas
+    const slides = [
+      {
+        etiqueta: " • FASE DE ARRANQUE (6 MESES)",
+        titulo: "Transición Formativa con Práctica Empresarial Real",
+        texto: "Siguiendo a Ramírez-Guerrero (2002), los programas no deben ser cursos cortos aislados, sino intervenciones integrales de al menos 6 meses (con mínimo 2 meses de práctica real en empresa y subsidio de transporte/alimentación) para romper la barrera de la falta de experiencia."
+      },
+      {
+        etiqueta: " • REDES Y CANALES FORMALES",
+        titulo: "Democratizar el Acceso a Vacantes (Superar la Asimetría)",
+        texto: "Castillo y García (2019) señalan que los jóvenes de estratos bajos carecen de redes familiares con contactos ('lazos débiles'). Fortalecer el Servicio Público de Empleo y el emparejamiento (matching) basado en datos permite que el talento y el título pesen más que las conexiones sociales."
+      },
+      {
+        etiqueta: " • SEGUIMIENTO DE MEDIANO PLAZO",
+        titulo: "Alianza Local entre Estado, Empresa y Sociedad Civil",
+        texto: "Articular instituciones educativas, empresas locales y Organizaciones de la Sociedad Civil (OSC) durante 2 a 3 años de acompañamiento continuo garantiza que los jóvenes desarrollen competencias socio-emocionales, adaptabilidad tecnológica y autoempleo competitivo."
+      }
+    ];
+
+    let indiceSlide = 0;
+    function renderCarrusel() {
+      const s = slides[indiceSlide];
+      const slideBox = document.getElementById('slideCarrusel');
+      const indicadoresBox = document.getElementById('indicadoresCarrusel');
+      if (slideBox) {
+        slideBox.innerHTML = `
+          <span class="text-xs font-extrabold tracking-wider text-amber-300 uppercase">${s.etiqueta}</span>
+          <h3 class="text-xl md:text-2xl font-bold mt-2 mb-3">${s.titulo}</h3>
+          <p class="text-slate-100 leading-relaxed">${s.texto}</p>
+        `;
+      }
+      if (indicadoresBox) {
+        indicadoresBox.innerHTML = slides.map(function(_, idx) {
+          return `<span class="h-2 rounded-full transition-all ${idx === indiceSlide ? 'w-8 bg-amber-400' : 'w-2 bg-white/40'}"></span>`;
+        }).join('');
+      }
+    }
+
+    function moverCarrusel(dir) {
+      indiceSlide = (indiceSlide + dir + slides.length) % slides.length;
+      renderCarrusel();
+    }
+
+    // Inicialización segura al cargar la página
+    document.addEventListener('DOMContentLoaded', function() {
+      const slider = document.getElementById('mesesSlider');
+      if (slider) {
+        slider.addEventListener('input', actualizarSimulador);
+        actualizarSimulador();
+      }
+      mostrarNivel('universitario');
+      cambiarPaso(1);
+      renderCarrusel();
+    });
+  </script>
+</body>
+</html>
